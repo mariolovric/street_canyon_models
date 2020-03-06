@@ -118,6 +118,10 @@ class RegressorClass:
             return pd.Series(y_full_pred.squeeze(), name='predicted', index=X_all.index)
 
     def return_val(self):
+        '''
+
+        :return:
+        '''
         results = {'best_cv_score': self.best_score, 'test_score': self.test_rmse}
         return results
 
@@ -148,8 +152,6 @@ class RegressorClass:
         '''
         perm = PermutationImportance(self.new_model, random_state=42).fit(x,y)
         expl_df = explain_weights_df(estimator=perm, feature_names=x.columns.tolist())
-
-
         return expl_df
 
 
