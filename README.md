@@ -5,36 +5,42 @@ Models accompanying the publicaton doi: xxx
 
 
 ## Project structure
-
-
     .
     ├── data                 # Data for modelling
-    ├── notebooks            # Jupyter notebooks for testing
     ├── results              # Results 
     ├── scripts              # Automated tests and run as .py
     ├── src                  # Source, models, tools, utilities
     ├── LICENSE
-    ├── README.md
-    └── chemenv-elo.yml      # Working Anaconda env
-______________________________________________
-## Running it
-
-**Warning!** The code is usually run on a powerful server. For testing 
-
-There are xxxx
-
-* `data/xxx.csv`          | xxxx
-* `data/xxx.csv`          | xxxx
-
+    └── README.md
+    
 ______________________________________________
 The code is set up as follows:
 
 > `src` has all the modules necessary for modelling
 
 > `src/config.py` has the configurations used by `src/models.py`
-> `src/xxx` xxx``
+> `src/preprocessing.py` is used by `src/models.py` to preprocess the data partially
+> `src/feat_utils.py` has some supporting functions and data
+> `scripts/run.py` is the script for running the code
+______________________________________________
+The original data can be downloaded from:
+https://zenodo.org/record/3694131
+
+A preprocessed and imputed data files is present in the "data" folder
+* `data/preprocessed.csv`          |
 
 ______________________________________________
-Preprocessing
+## Running it
 
-* TB
+For running the script, a conda environment is recommended (or other Python distributions).
+
+Conda installation:
+`https://docs.conda.io/projects/conda/en/latest/user-guide/install/`
+
+Once Conda is installed the environment for running this script can be created as follows:
+`conda create -n envpol python=3.6 scikit-learn=0.22 eli5 numpy pandas`
+
+In the script folder, the experiment 
+`python run.py`
+
+
