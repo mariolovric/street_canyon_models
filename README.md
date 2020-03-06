@@ -1,4 +1,3 @@
-# Repositoy street_canyon_models
 Models accompanying the publicaton doi: xxx
 ## Applying Machine Learning Methods to better understand, model and estimate mass concentrations of traffic-related pollutants at a typical street canyon
 ### Iva Šimić, Mario Lovrić, Ranka Godec, Mark Kröll, Ivan Bešlić
@@ -44,3 +43,7 @@ In the script folder, the experiment
 `python run.py`
 
 
+<<<<<<< HEAD
+=======
+* TB
+>>>>>>> ae4f42d49f63d4bfd2922619b81e279eacfb7194
